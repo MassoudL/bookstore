@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/bookstore_1.css">
+    <title>Bookslab</title>
+</head>
+
+<body>
+    <div class="container_header d-flex">
+        <div class="d-flex justify-content-between bd-highlight">
+            <div><img class="logo" src="images/bookslab1.png" alt="logo">
+            </div>
+
+        </div>
+
+        <div class="searchbox">
+            <div class="d-flex justify-content-around bd-highlight">
+                <div class="col-sm-12 col-md-10 col-lg-8">
+                    <form class="card card-sm" role="search" action="#">
+                        <!-- action="#" verbietet das Neuladen der Seite -->
+                        <div class="card-body row no-gutters align-items-right">
+                            <div class="col-auto">
+                                <i class="fas fa-search h3 text-body"></i>
+                            </div>
+                            <!--end of col-->
+                            <div class="col">
+                                <input id="searchInput" class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search books or keywords">
+                            </div>
+                            <!--end of col-->
+                            <div class="col-auto">
+                                <!-- beim Click auf den Button wird die Funktion searchByString() aufgerufen-->
+                                <button id="searchButton" class="btn btn-lg btn-success">Search</button>
+                            </div>
+                            <!--end of col-->
+                        </div>
+                    </form>
+                </div>
+                <!--end of col-->
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-flex flex-wrap justify-content-around bg-light" id="cardContainer">
+        <!-- der Inhalt dieses divs wird in der Funktion buildCards() abgebildet -->
+      <!--<div class="card">
+            <div class="cardfront"></div>
+            <div class="cardback"></div>
+      </div>
+    </div> -->
+
+    <footer class="page_footer font-small blue">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Bookslab | All Rights Reserved.
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="statistics_bookstore.js"></script>
+</body>
+
+</html>

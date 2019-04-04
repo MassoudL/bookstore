@@ -1,0 +1,136 @@
+.searchbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;*/
+
+}
+
+.container_header {
+    width: 200px;
+    height: 200px;
+    margin-top: 25px;
+    margin-left: 1px;
+    z-index: 1;
+}
+
+
+/* Float four columns side by side */
+.column {
+    display: flex;   
+    flex-wrap: wrap;
+    align-items: stretch;
+    float: left;
+    /*padding: 10px 10px;*/
+    height: 400px;
+    margin-bottom: 20px;
+    background: dark-blue;
+    width: 100px;
+
+}*/
+
+
+/* Clear floats after the columns */
+/*.row: after {
+    content: "";
+    display: table;
+    clear: both;*/
+}
+
+/* Responsive column */
+/*max-width: 500px {
+    .column {
+        width: 80%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}*/
+
+/* Style the counter cards */
+/*.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: center;
+    background-color: #76A3B8;*/
+
+}
+
+/*.imageSize{
+    display: flex;
+    width: 200px;
+    height: 200px;*/
+}
+
+
+.container {
+    perspective: 1000px;
+
+}
+
+    .container:hover .card, .container.hover .card {
+		transform: rotateY(180deg);
+	}
+
+.container, .cardfront, .cardback {
+	width: 3400px;
+	height: 480px;
+}
+
+.card {
+    cursor: pointer;
+    width: 340px;
+    height: 480px;
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+.cardfront, .cardback {
+	backface-visibility: hidden;
+    height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.cardfront {
+	z-index: 2;
+	
+	transform: rotateY(0deg);
+}
+
+.cardback {
+	transform: rotateY(180deg);
+}
+
+/*
+.button {
+   margin: 20px 0;
+}
+
+.button a {
+   display: inline-flex;
+   width: 40px;
+   height: 40px;
+   justify-content: center;
+   align-items: center;
+   color: #2c3e50;
+   font-size: 18px;
+   transition: 0.4s;
+   border-radius: 50%
+}
+
+.button a:hover {
+   background: #2c3e50;
+   color: white;
+}
+
+.page_footer {
+
+    background-color: darkseagreen;
+    width: 100%;
+    padding-bottom: 0px 0px;
+    border-bottom: 30px solid #76A3B8;
+
+
+}
